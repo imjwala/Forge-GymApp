@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SectionWrapper from "./SectionWrapper";
 import { SCHEMES, WORKOUTS } from "../utils/forger";
-import Button from './Button'
+import Button from "./Button";
 
 function Header(props) {
   const { index, title, description } = props;
@@ -19,9 +19,9 @@ function Header(props) {
 }
 
 export default function Generator(props) {
- const { muscles, setMuscles, anvil, setAnvil, goal, setGoal, updateWorkout } = props
+  const { muscles, setMuscles, anvil, setAnvil, goal, setGoal, updateWorkout } =
+    props;
   const [showModal, setShowModal] = useState(false);
-
 
   function toggleModal() {
     setShowModal(!showModal);
@@ -70,7 +70,7 @@ export default function Generator(props) {
               }}
               className={
                 "bg-gray-950 border  duration-200 px-4 hover:border-lime-600 py-3 rounded-lg " +
-                (type === anvil ? " border-lime-600" : " border-lime-400")
+                (type === anvil ? " border-lime-600" : " border-transparent")
               }
               key={typeIndex}
             >
@@ -84,7 +84,12 @@ export default function Generator(props) {
         title={"Draft the limeprint"}
         description={"Define the areas to be shaped and hardened."}
       />
-      <div className="bg-gray-950  border border-solid border-lime-400 rounded-lg flex flex-col">
+      <div
+        className={
+          "bg-gray-950 border border-solid rounded-lg flex flex-col duration-200 hover:border-lime-400 " +
+          (muscles.length > 0 ? "border-lime-600" : "border-transparent")
+        }
+      >
         <button
           onClick={toggleModal}
           className="relative p-3 flex items-center justify-center"
@@ -92,7 +97,7 @@ export default function Generator(props) {
           <p className="capitalize">
             {muscles.length == 0 ? "Select muscle groups" : muscles.join(" ")}
           </p>
-          <i className="fa-solid absolute right-3 top-1/2 -trangray-y-1/2 fa-caret-down"></i>
+          <i className="fa-solid absolute right-3 top-1/2 -translate-y-1/2 fa-caret-down"></i>
         </button>
         {showModal && (
           <div className="flex flex-col px-3 pb-3">
@@ -134,7 +139,7 @@ export default function Generator(props) {
               }}
               className={
                 "bg-gray-950 border  duration-200 hover:border-lime-600 py-3 rounded-lg px-4 " +
-                (scheme === goal ? " border-lime-600" : " border-lime-400")
+                (scheme === goal ? " border-lime-600" : " border-transparent")
               }
               key={schemeIndex}
             >
@@ -143,7 +148,7 @@ export default function Generator(props) {
           );
         })}
       </div>
-      <Button func = {updateWorkout} text={"Formulate"}></Button>
+      <Button func={updateWorkout} text={"Formulate"}></Button>
     </SectionWrapper>
   );
 }
