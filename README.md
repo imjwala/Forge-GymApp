@@ -6,6 +6,7 @@
 
 A modern, intuitive web application that generates personalized workout plans tailored to your fitness goals, target muscle groups, and training style.
 
+Demo: https://forge-gym.netlify.app/
 </div>
 
 ---
