@@ -1,16 +1,70 @@
-# React + Vite
+# 🔥 Forge Gym Training
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+**Your Personal Workout Generator - Forge Your Ultimate Physique**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, intuitive web application that generates personalized workout plans tailored to your fitness goals, target muscle groups, and training style.
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 About The Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Forge Gym Training is a smart workout generator that eliminates the guesswork from your fitness journey.  Forge creates customized workout routines based on your specific needs and goals.
+
+### ✨ Key Features
+
+- **🏋️ Multiple Workout Types**
+  - Individual muscle targeting
+  - Bro split routines
+  - Upper/Lower body splits
+  - Full body workouts
+  - Push/Pull/Legs programs
+
+- **💪 Comprehensive Muscle Selection**
+  - Target specific muscle groups
+  - Combine multiple muscle groups (for individual workouts)
+  - Pre-configured muscle combinations for split routines
+
+- **🎯 Goal-Oriented Training**
+  - Strength & Power development
+  - Hypertrophy (muscle growth)
+  - Endurance & Conditioning
+  
+- **📱 Responsive Design**
+  - Beautiful, modern UI built with Tailwind CSS
+  - Fully responsive across all devices
+  - Smooth animations and transitions
+
+---
+
+## 🛠️ Built With
+
+- **React** - Frontend framework
+- **Vite** - Build tool & development server
+- **Tailwind CSS** - Utility-first styling
+- **JavaScript (ES6+)** - Core programming language
+
+---
+
+## 🎨 Features In Detail
+
+### Smart Muscle Selection
+- Prevents invalid combinations
+- Auto-closes modal after selection
+- Visual feedback for selected muscles
+
+### Dynamic Workout Generation
+- Randomized exercise selection
+- Proper set/rep schemes based on goals
+- Balanced muscle group coverage
+
+### User-Friendly Interface
+- Intuitive three-step process
+- Clear visual hierarchy
+- Hover states and animations
+
+---
+
